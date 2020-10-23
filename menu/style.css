@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header, footer {
+    background: #c5c5c5;
+}
+
+.container {
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container > * {
+    padding: 0 20px;
+}
+
+main {
+    display: flex;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column-reverse;
+    }
+}
+
+main aside {
+    margin-right: 40px; 
+}
