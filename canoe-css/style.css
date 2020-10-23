@@ -5,21 +5,27 @@ body, html {
     font-family: Montserrat;
 }
 
-nav {
+.nav-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: auto;
 }
 
-nav h1 {
-    width: 50%;
+.nav-logo {
+    padding: 10px;
 }
 
-nav > ul {
+.nav-menu {
+    justify-content: space-between;
+}
+
+.nav-menu ul {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
     justify-content: flex-end;
 }
 
@@ -33,11 +39,21 @@ nav > ul {
     font-weight: bold;
 }
 
+.burger-menu {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    margin-right: 5px;
+}
+
+.burger-menu:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
-    nav {
-        flex-direction: column;
-    }
-    nav ul {
+    .nav-menu ul {
         flex-direction: column;
         align-items: center;
     }
@@ -57,9 +73,3 @@ nav > ul {
     display: none;
 }
 
-#burger-icon {
-    text-decoration: none;
-    color: white;
-    width: 50px;
-    transform: rotate(90deg);
-}
