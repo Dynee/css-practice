@@ -108,7 +108,7 @@ main {
 .hero-inner-container a {
   padding: 5px 0;
   text-decoration: none;
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid #82baf9;
   color: white;
 }
 
@@ -144,7 +144,44 @@ main {
   color: #060b47;
   font-size: 20px;
   font-weight: bold;
-  border-bottom: 2px solid #060b47;
+  border-bottom: 3px solid #82baf9;
 }
 
+@media screen and (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+  }
+
+  .info-item {
+    margin: 20px 0;
+  }
+}
+
+.slider-container {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.slider-info h1 {
+  color: #82baf9;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.slider-info p {
+  text-align: center;
+}
+
+.slider-content {
+  display: flex;
+  flex-direction: row;
+}
 /********/
