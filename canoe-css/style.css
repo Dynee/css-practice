@@ -1,77 +1,119 @@
 body, html {
-    height: 100%;
-    background-color: #060b47;
-    color: white;
-    font-family: Montserrat;
+  height: 100%;
+  background-color: #060b47;
+  color: white;
+  font-family: Montserrat;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .nav-container {
-    display: flex;
-    padding: 10px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .nav-logo {
-    display: flex;
-    padding: 5px;
-  }
-  
-  .nav-menu ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+}
 
-  .nav-menu ul li {
-      padding: 10px;
-  }
+/* NAVIGATION */
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .nav-menu ul li a {
-      color: white;
-      text-decoration: none;
-  }
+.nav-logo {
+  display: flex;
+  font-weight: bold;
+  font-size: 24px;
+}
 
-  .nav-menu-mobile ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
-  
-  .nav-menu-mobile li {
-    margin: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    border: 1px solid #eee;
-  }
+.nav-menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  .nav-menu-mobile ul li a {
-    color: #060b47;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .burger-menu {
-      display: block;
-      width: 35px;
-      height: 5px;
-      background-color: white;
-      margin: 6px 0;
-      margin-right: 5px;
-  }
+.nav-menu ul li {
+  padding: 10px;
+}
+
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu-mobile ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.nav-menu-mobile li {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #eee;
+}
+
+.nav-menu-mobile ul li a {
+  color: #060b47;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.burger-menu {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  margin-right: 5px;
+}
+
+/********/
+
+
+/* MAIN CONTENT */
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.hero-container h1 {
+  font-size: 55px;
+}
+
+.hero-inner-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-inner-container a {
+  padding: 5px 0;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+#canoe-explained {
+  margin-left: 20px;
+}
+
+/********/
